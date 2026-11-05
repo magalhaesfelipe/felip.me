@@ -11,11 +11,13 @@ export const Home = () => {
 					FELIPE MAGALHÃES
 				</span>
 				<ul className='flex items-center border-r border-base-darker font-medium tracking-[0.15em] text-[12px] justify-center gap-13'>
-					<li> PROJECTS </li>
+					<li className='hover:text-highlight transition duration-150'>
+						PROJECTS{' '}
+					</li>
 					<li> ARTICLES </li>
 				</ul>
 				<div className='flex items-center justify-end'>
-					<button className='border-2 border-transparent hover:border-white py-2 px-6'>
+					<button className='border border-base-darker hover:border-white py-2 px-6'>
 						INQUIRIES
 					</button>
 				</div>
