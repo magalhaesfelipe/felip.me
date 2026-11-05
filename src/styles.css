@@ -1,0 +1,26 @@
+@import './styles/fonts/font-face.css';
+@import 'tailwindcss';
+
+@theme {
+	/* Text */
+	--color-base: #6e6e6e;
+	--color-base-dark: #545454;
+	--color-base-darker: #171717;
+	/* Background */
+	--color-bg: #050505;
+	--color-bg-light: #0e0e0e;
+
+	/* Highlight */
+	--color-highlight: #ececec;
+	--color-highlight-light: #ffffff;
+
+	/* Font */
+	--font-playfair: 'Playfair Display', cursive;
+	--font-inter: 'Inter', cursive;
+}
+
+body {
+	background-color: #050505;
+	color: var(--color-base);
+	font-family: var(--font-inter, cursive);
+}
