@@ -12,7 +12,8 @@ export const Header = () => {
 				FELIPE MAGALHÃES
 			</span>
 
-			<ul className='flex items-center border-r border-base-darker font-medium tracking-[0.25em] text-[11px] justify-center gap-13'>
+			<ul className='flex relative items-center border-r border-base-darker font-medium tracking-[0.25em] text-[11px] justify-center gap-13'>
+				<div></div>
 				<li
 					onClick={() => {
 						if (location.pathname === '/') return;
