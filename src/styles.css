@@ -6,6 +6,7 @@
 	--color-base: #6e6e6e;
 	--color-base-dark: #545454;
 	--color-base-darker: #171717;
+
 	/* Background */
 	--color-bg: #050505;
 	--color-bg-light: #0e0e0e;
@@ -17,6 +18,21 @@
 	/* Font */
 	--font-playfair: 'Playfair Display', cursive;
 	--font-inter: 'Inter', cursive;
+}
+
+/* Scrollbar style */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--color-bg);
+	border-radius: 0px;
+	border: 2px solid var(--color-bg-light);
 }
 
 body {
