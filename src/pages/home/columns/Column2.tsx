@@ -3,7 +3,7 @@ import imageMiddleColumn from '../../../assets/image-2.jpg';
 export const Column2 = () => {
 	return (
 		<div className='flex relative  border-r border-base-darker font-medium text-[12px] justify-center gap-13'>
-			<div className='absolute group overflow-hidden w-full z-10 top-15 right-[-30%] h-full shadow-[0_-2px_10px_rgba(0,0,0,0.9)]'>
+			<div className='absolute group overflow-hidden w-full z-10 top-15 right-[-35%] h-full shadow-[0_-2px_10px_rgba(0,0,0,0.9)]'>
 				<img
 					src={imageMiddleColumn}
 					alt=''

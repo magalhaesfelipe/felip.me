@@ -1,29 +1,59 @@
 import { useState } from 'react';
 import image1 from '../../../assets/image-6.jpg';
+import { Icon } from '@iconify/react';
 
 export const Column3 = () => {
-	const [expandedProject, setExpandedProject] = useState('');
+	const [expandedProject, setExpandedProject] = useState('elit-wallpapers');
 
 	return (
-		<div className='grid grid-flow-row auto-rows-auto items-start w-full grid-cols-[50%] justify-end gap-10 py-15'>
-			<div className='flex flex-col group'>
-				<button className='text-xs tracking-[0.20em] font-[300] border-b border-base-darker hover:border-white py-2 px-6'>
+		<div className='grid grid-flow-row auto-rows-auto items-start w-full grid-cols-[56%] justify-end py-15'>
+			{/* Item 1 */}
+			<div className='flex cursor-pointer flex-col group hover:text-highlight transition-all duration-300'>
+				<button
+					onClick={() => {
+						if (expandedProject !== 'elit-wallpapers') {
+							setExpandedProject('elit-wallpapers');
+						} else {
+							setExpandedProject('');
+						}
+					}}
+					className='cursor-pointer group-hover:text-highlight group-hover:border-highlight transition-all duration-300 text-xs tracking-[0.20em] font-[300] border-b border-base-darker hover:border-white py-2 px-6'
+				>
 					ELIT WALLPAPERS
 				</button>
-				<div className='grid text-sm w-full grid-cols-3 * *:w-4 *:h-5 *:border-r *:border-base-darker'>
+				<div className='grid group-hover:border-highlight *:group-hover:border-highlight *:transition *:duration-300 transition-all duration-300 text-sm w-full grid-cols-3 * *:w-4 *:h-5 *:border-r *:border-base-darker'>
 					<p> </p>
 					<p> </p>
 					<p> </p>
 				</div>
-				<div className='border-x-14 h-70  border-highlight'>
-					<img
-						src={image1}
-						alt=''
-						className='h-full w-full object-cover border-x border-base-dark p-3 bg-highlight transition-transform duration-700 ease-out group-hover:scale-110'
-					/>
+
+				{/* Image dropdown */}
+				<div
+					className={`
+            ${expandedProject === 'elit-wallpapers' ? 'visible h-100 translate-y-1.5 opacity-100' : 'invisible h-0 -translate-y-1.5 opacity-0'}
+           duration-300 border-highlight`}
+				>
+					<div className='border-highlight border-x-14 relative h-80 duration-700 overflow-hidden ease-in-out border-highlight'>
+						<img
+							src={image1}
+							alt=''
+							className='h-full w-full relative object-cover border-x border-black/15 px-2.75 py-1.5 bg-highlight transition-transform duration-700 ease-out group-hover:scale-106'
+						/>
+						<div className='absolute p-2 bg-black/70 h-[50%] left-[20%] justify-center flex top-[27%] items-center object-cover rounded-sm w-[60%] size-5'>
+							<Icon
+								icon='boxicons:image-alt'
+								className='text-highlight size-20'
+							/>
+						</div>
+					</div>
+					<div className='flex flex-col py-4 text-[11px] font-[400] tracking-[0.15em]'>
+						<span>01 — A WALLPAPERS PLATFORM</span>
+						<span>V1.0, 2026</span>
+					</div>
 				</div>
 			</div>
 
+			{/* Item 2 */}
 			<div className='flex flex-col'>
 				<button className='text-xs tracking-[0.20em] font-[300] border-b border-base-darker hover:border-white py-2 px-6'>
 					TONEGRID
@@ -35,6 +65,7 @@ export const Column3 = () => {
 				</div>
 			</div>
 
+			{/* Item 3 */}
 			<div className='flex flex-col'>
 				<button className='text-xs tracking-[0.20em] font-[300] border-b border-base-darker hover:border-white py-2 px-6'>
 					ELIT WALLPAPERS
