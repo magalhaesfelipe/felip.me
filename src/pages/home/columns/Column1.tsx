@@ -5,7 +5,7 @@ export const Column1 = () => {
 		<div className='text-highlight relative border-r border-base-darker flex flex-col gap-3 pt-14 font-medium '>
 			<div className='text-base-dark items-center gap-5 tracking-[0.25em] relative flex text-[11px]'>
 				<div className='w-7 border-b border-base-dark'></div>
-				<h4>FEATURED ARTICLES</h4>
+				<h4>FEATURED ARTICLE</h4>
 			</div>
 			<div className='flex flex-col gap-7'>
 				<h1 className='font-playfair text-6xl w-[35%] flex flex-col'>
