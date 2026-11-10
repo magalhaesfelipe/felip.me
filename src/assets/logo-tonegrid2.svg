@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- 5-block "+", tiles overlapping ~6px, rotated 45° -->
+  <g transform="translate(104, 104) rotate(45 152 152)">
+    <!-- Top-Left: Light Mint Green -->
+    <rect x="0" y="0" width="104" height="104" rx="28" fill="#f9fafb" />
+
+    <!-- Top-Right: Mint Green -->
+    <rect x="196" y="0" width="104" height="104" rx="28" fill="#63e6be" />
+
+    <!-- Center: Vibrant Emerald Green -->
+    <rect x="98" y="98" width="104" height="104" rx="28" fill="#22c57e" />
+
+    <!-- Bottom-Left: Mint Green -->
+    <rect x="0" y="196" width="104" height="104" rx="28" fill="#63e6be" />
+
+    <!-- Bottom-Right: Light Mint Green -->
+    <rect x="196" y="196" width="104" height="104" rx="28" fill="#f9fafb" />
+  </g>
+</svg>

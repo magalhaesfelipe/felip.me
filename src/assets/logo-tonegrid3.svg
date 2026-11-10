@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- 5-block "+", theme-matched grayscale, tiles overlapping ~6px, rotated 45° -->
+  <g transform="translate(106, 106) rotate(45 150 150)">
+    <!-- Top-Left: highlight-light (brightest corner) -->
+    <rect x="0"   y="0"   width="104" height="104" rx="28" fill="#ffffff" />
+
+    <!-- Top-Right: base (mid gray) -->
+    <rect x="196" y="0"   width="104" height="104" rx="28" fill="#6e6e6e" />
+
+    <!-- Bottom-Left: base (mid gray) -->
+    <rect x="0"   y="196" width="104" height="104" rx="28" fill="#6e6e6e" />
+
+    <!-- Bottom-Right: highlight-light (brightest corner) -->
+    <rect x="196" y="196" width="104" height="104" rx="28" fill="#ffffff" />
+
+    <!-- Center: highlight (boldest, on top) -->
+    <rect x="98"  y="98"  width="104" height="104" rx="28" fill="#ececec" />
+  </g>
+</svg>
