@@ -25,8 +25,6 @@ export const Home = () => {
 				<Column3 />
 				<div className='border-l border-base-darker'></div>
 			</main>
-
-			<Footer />
 		</div>
 	);
 };
