@@ -17,7 +17,7 @@ export const Contact = () => {
 					onClick={() => {
 						navigate('/');
 					}}
-					className='font-normal tracking-wider hover:text-highlight hover:border-white/20 transition duration-300 cursor-pointer flex justify-center pt-7 items-start h-[20%] w-full border-r-transparent border-b border-r border-white/5'
+					className='font-normal tracking-wide hover:text-highlight hover:border-white/20 transition duration-300 cursor-pointer flex justify-center pt-7 items-start h-[20%] w-full border-r-transparent border-b border-r border-white/5'
 				>
 					cd ../
 				</button>
