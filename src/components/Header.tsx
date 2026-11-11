@@ -8,9 +8,14 @@ export const Header = () => {
 		<section className='h-24.75 border-b border-base-darker w-full grid grid-cols-[4%_1fr_1fr_1fr_4%]'>
 			<div className='border-r border-base-darker'></div>
 
-			<span className='text-highlight text-2xl border-r border-base-darker  flex items-center font-playfair font-medium tracking-[0.15em]'>
+			<button
+				onClick={() => {
+					if (location.pathname !== '/') navigate('/');
+				}}
+				className='text-highlight text-2xl cursor-pointer border-r border-base-darker  flex items-center font-playfair font-medium tracking-[0.15em]'
+			>
 				FELIPE MAGALHÃES
-			</span>
+			</button>
 
 			<ul className='flex relative items-center border-r border-base-darker font-medium tracking-[0.25em] text-[11px] justify-center gap-13'>
 				<div></div>
