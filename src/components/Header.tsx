@@ -63,7 +63,9 @@ export const Header = () => {
 
 			<div className='flex items-center justify-end tracking-[0.20em]'>
 				<button
-					onClick={() => navigate('/about')}
+					onClick={() => {
+						if (location.pathname !== 'contact-me') navigate('/contact-me');
+					}}
 					className='border cursor-pointer text-[11px] border-base-darker hover:bg-highlight hover:text-base-darker py-3 px-7 transition duration-150'
 				>
 					INQUIRE
