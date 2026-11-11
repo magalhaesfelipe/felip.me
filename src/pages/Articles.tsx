@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react';
 import { useNavigate } from 'react-router-dom';
 
 export const Articles = () => {
@@ -13,9 +14,15 @@ export const Articles = () => {
 					onClick={() => {
 						navigate('/');
 					}}
-					className='font-normal tracking-wide hover:text-highlight hover:border-white/20 transition duration-300 cursor-pointer flex justify-center pt-7 items-start h-[20%] w-full border-r-transparent border-b border-r border-white/5'
+					className='font-normal tracking-wide hover:text-highlight hover:border-white/20 transition duration-300 cursor-pointer gap-0 flex justify-center items-start pt-7 h-[20%] w-full border-r-transparent border-b border-r border-white/5'
 				>
-					cd ../
+					<div className='flex items-center justify-center'>
+						<Icon
+							icon='material-symbols:keyboard-arrow-right'
+							className='size-5'
+						/>
+						cd ..
+					</div>
 				</button>
 			</div>
 			<div className='h-full flex relative justify-baseline py-2 '>
