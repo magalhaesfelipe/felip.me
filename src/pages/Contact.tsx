@@ -1,4 +1,7 @@
+import { useNavigate } from 'react-router-dom';
+
 export const Contact = () => {
+	const navigate = useNavigate();
 	const githubLink = 'https://github.com/magalhaesfelipe';
 	const linkedinLink =
 		'https://www.linkedin.com/in/felipe-magalh%C3%A3es-b2b36a2b6/';
@@ -6,11 +9,20 @@ export const Contact = () => {
 
 	return (
 		<main
-			className='h-full relative isolate z-10 w-full grid grid-cols-[4%_1fr_1fr_1fr_4%]
+			className='h-full relative isolate z-10 w-full grid grid-cols-[7%_1fr_1fr_1fr_7%]
   after:absolute after:inset-x-0 after:bottom-0 after:z-20 after:border-b after:border-base-darker after:pointer-events-none'
 		>
-			<div className=''></div>
-			<div className='h-full flex justify-end py-2 border-r border-white/5'>
+			<div className='border-r border-white/5'>
+				<button
+					onClick={() => {
+						navigate('/');
+					}}
+					className='font-normal tracking-wider hover:text-highlight hover:border-white/20 transition duration-300 cursor-pointer flex justify-center pt-7 items-start h-[20%] w-full border-r-transparent border-b border-r border-white/5'
+				>
+					cd ../
+				</button>
+			</div>
+			<div className='h-full flex relative justify-end py-2 border-r border-white/5'>
 				<div className='h-full flex flex-col gap-30  w-5 *:border-b *:border-white/5'>
 					{Array.from({ length: 9 }, (_, i) => i).map((_, i) => (
 						<div key={i} className='w-full'></div>
