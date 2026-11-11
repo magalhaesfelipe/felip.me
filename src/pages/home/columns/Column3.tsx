@@ -7,7 +7,7 @@ export const Column3 = () => {
 	const [expandedProject, setExpandedProject] = useState('elit-wallpapers');
 
 	return (
-		<div className='relative grid grid-rows-[1fr_20%] w-full h-full'>
+		<div className='relative grid grid-rows-[1fr_20%] w-full h-[80%]'>
 			<div className='grid grid-flow-row auto-rows-auto items-start w-full grid-cols-[56%] justify-end py-15'>
 				{/* Item 1 */}
 				<div className='flex cursor-pointer flex-col group hover:text-highlight transition-all duration-300'>
