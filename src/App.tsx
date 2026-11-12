@@ -4,6 +4,7 @@ import { Contact } from './pages/Contact';
 import { RootLayout } from './pages/RootLayout';
 import { Articles } from './pages/Articles';
 import { TheDeceivingLayout } from './pages/articles/TheDeceivingLayout';
+import { Projects } from './pages/Projects';
 
 export const App = () => {
 	return (
@@ -13,6 +14,7 @@ export const App = () => {
 					<Route path='/' element={<Home />} />
 					<Route path='/contact-me' element={<Contact />} />
 					<Route path='/articles' element={<Articles />} />
+					<Route path='/projects' element={<Projects />} />
 					<Route
 						path='/articles/the-deceiving-layout'
 						element={<TheDeceivingLayout />}
