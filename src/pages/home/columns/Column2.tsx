@@ -39,7 +39,7 @@ export const Column2 = () => {
 						</span>
 						,
 						<span className='bg-black/60 text-highlight hover:text-bg text-center font-medium cursor-pointer transition duration-300'>
-							Toge theme(Neovim/VSCode)
+							The Toge Theme(Neovim/VSCode)
 						</span>
 						.
 					</span>
