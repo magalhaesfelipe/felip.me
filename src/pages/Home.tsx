@@ -6,10 +6,10 @@ import { Column3 } from './home/columns/Column3';
 
 export const Home = () => {
 	return (
-		<div className='h-dvh w-dbw'>
+		<div className=' w-dbw'>
 			<Header />
 			<main
-				className='h-full relative isolate z-10 w-full grid grid-cols-[4%_1fr_1fr_1fr_4%]
+				className='relative isolate z-10 w-full grid grid-cols-[4%_1fr_1fr_1fr_4%]
   '
 			>
 				{/* <main className='h-full border-b relative isolate z-10 border-base-darker w-full grid grid-cols-[4%_1fr_1fr_1fr_4%]'> */}
