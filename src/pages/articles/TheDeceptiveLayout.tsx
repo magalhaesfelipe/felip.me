@@ -6,7 +6,7 @@ export const TheDeceivingLayout = () => {
 
 	return (
 		<div>
-			<header className='h-20 border-b border-white/5'></header>
+			<header className='h-15 border-b border-white/5'></header>
 			<main
 				className='h-full relative isolate z-10 w-full grid grid-cols-[4%_1fr_2.5fr_1fr_4%]
   after:absolute after:inset-x-0 after:bottom-0 after:z-20 after:border-b after:border-base-darker after:pointer-events-none'
@@ -14,11 +14,11 @@ export const TheDeceivingLayout = () => {
 				<div className='border-r border-white/5'></div>
 				<div></div>
 
-				<div className='p-10 pb-30 flex flex-col gap-6'>
+				<div className='px-10 pt-15 pb-30 flex flex-col gap-6'>
 					{/* Title */}
 					<div className='mb-5'>
 						<h1 className='text-highlight text-5xl font-playfair'>
-							The Deceiving Layout
+							The Deceptive Layout
 						</h1>
 						<span className='text-[13px] pl-1 tracking-widest'>
 							NOV 11, 2026
