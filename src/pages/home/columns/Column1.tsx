@@ -1,12 +1,16 @@
+import { useNavigate } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import imageColumnOne from '../../../assets/image-9.jpg';
 
 export const Column1 = () => {
+	const navigate = useNavigate();
+
 	return (
 		<div className='text-highlight relative z-30 group left-0 border-r border-base-darker flex flex-col gap-3 pt-14 font-medium '>
 			<button
 				title='See full article'
-				className='absolute cursor-pointer z-10 hover:bg-base-darker right-8 transition duration-500 group-hover:visible group-hover:opacity-100 group-hover:translate-y-1.5 invisible opacity-0 -translate-y-1.5 ease-in-out top-10 flex items-center border-base border justify-center bg-bg  text-highlight size-8 rounded-full'
+				onClick={() => navigate('/articles/the-deceptive-layout')}
+				className='absolute cursor-pointer z-10 hover:bg-bg bg-base-darker right-8 transition duration-500 group-hover:visible group-hover:opacity-100 group-hover:translate-y-1.5 invisible opacity-0 -translate-y-1.5 ease-in-out top-10 flex items-center border-base-darker border justify-center  text-highlight size-8 rounded-full'
 			>
 				<Icon icon='akar-icons:arrow-right' />
 			</button>

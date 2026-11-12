@@ -9,10 +9,10 @@ export const Column2 = () => {
 					alt=''
 					className='absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110'
 				/>
-				<div className='absolute z-20 inset-0 bg-black/10' />
+				<div className='absolute z-20 inset-0 bg-black/50' />
 
-				<div className='absolute z-30 uppercase w-[90%] text-[13px] font-normal top-7 left-[7%] text-base-dark tracking-[0.15em] transition duration-500 group-hover:translate-y-1.5 '>
-					<span>
+				<div className='absolute z-30 uppercase w-[93%] text-[13px] font-normal top-7 left-[5%] text-base-dark tracking-[0.1em] transition duration-500 group-hover:translate-y-1.5'>
+					<span className='text-highlight'>
 						HI, I'M{' '}
 						<strong className='font-playfair font-bold'>
 							FELIPE MAGALHÃES
@@ -20,45 +20,116 @@ export const Column2 = () => {
 						, A TECH ENTHUSIAST AND SOFTWARE ENGINEER.
 					</span>
 
-					<div className='flex items-center gap-1 mb-2'>
-						<span className='flex gap-1 items-center'>
-							Creator of
-							<strong className='bg-bg-light text-white font-semibold px-0.5 rounded-sm'>
-								{' '}
-								Tonegrids
-							</strong>
-							<strong className='bg-bg-light text-white font-semibold px-0.5 tracking-normal rounded-sm'>
-								Elit Wallpapers
-							</strong>
-							<strong className='bg-bg-light text-white font-semibold rounded-sm px-0.5'>
-								Mangazine
-							</strong>
+					<br />
+					<br />
+					{/* PROJECTS LIST */}
+					<span className='text-highlight tracking-normal *:px-1'>
+						Creator of{' '}
+						<span className='bg-black/60 text-highlight hover:text-bg text-center px-1 font-semibold cursor-pointer transition duration-300'>
+							Elit Wallpapers
 						</span>
-					</div>
+						,
+						<span className='bg-black/60 text-highlight hover:text-bg text-center font-medium cursor-pointer transition duration-300'>
+							Tonegrid
+						</span>
+						,
+						<br />
+						<span className='bg-black/60 text-highlight hover:text-bg text-center font-medium cursor-pointer transition duration-300'>
+							Mangazine
+						</span>
+						,
+						<span className='bg-black/60 text-highlight hover:text-bg text-center font-medium cursor-pointer transition duration-300'>
+							Toge theme(Neovim/VSCode)
+						</span>
+						.
+					</span>
 
-					<p className=''>Working at Pax Primavera</p>
-					<p>
-						Recent work Vite DevTools Nuxt DevTools Devframe pulls.review
-						Furifont
+					<p className='text-highlight tracking-normal'>
+						Working at{' '}
+						<span className='px-1 bg-black/60 hover:text-bg text-center font-medium cursor-pointer transition duration-300'>
+							Pax Primavera
+						</span>
 					</p>
-					<p>Core team of Vue Nuxt Vite</p>
-					<p>Maintaining Shiki Twoslash ESLint Stylistic </p>
-					<div className='mt-5 text-highlight uppercase'>
-						<strong className='text-base-dark font-normal uppercase'>
-							Dreaming up cool ideas and making them come true is where my
-							passion lies. I am enthusiastic about building tools that help
-							myself and others to be more productive and enjoy the process of
-							crafting. You can find my full projects list here.
+
+					<p className='text-highlight tracking-normal'>
+						Recent work{' '}
+						<span className='px-1 bg-black/60 hover:text-bg text-center font-medium cursor-pointer transition duration-300'>
+							Tonegrid
+						</span>
+						,
+						<span className='px-1 ml-0.5 bg-black/60 hover:text-bg text-center font-medium cursor-pointer transition duration-300'>
+							The North Social Path
+						</span>
+					</p>
+
+					<p className='text-highlight tracking-normal'>
+						Part of{' '}
+						<span className='px-1 bg-black/60 hover:text-bg text-center font-medium cursor-pointer transition duration-300'>
+							RGM-79N
+						</span>
+					</p>
+					<br />
+					<br />
+
+					<span className='text-highlight uppercase'>
+						<strong className='text-highlight font-normal uppercase'>
+							I enjoy the process of crafting. From the initial idea to real
+							people using and being better off with something I helped to
+							build.{' '}
+							<strong className='text-highlight-light font-normal uppercase'>
+								I'm enthusiastic about optimizing this process so the time
+								between start-finish is minimal. You can find some of my
+								projects here.
+							</strong>
 						</strong>
-						I give talks and write blog posts about open source, coding, etc. I
-						am co-hosting a podcast No Coding Today (in Mandarin). Occasionally,
-						I do live coding streams on YouTube and 哔哩哔哩. From time to time,
-						I make some generative-art, interactivity experiments on
-						100.antfu.me. Outside of programming, I enjoy doing photography and
-						traveling. I post photos on this page. In case you are interested,
-						here are the hardware/software I use. Find me on GitHub Bluesky
-						Discord Server Twitter 中文推 日本語 Or mail me at hiantfu.me
-					</div>
+					</span>
+					<br />
+					<br />
+					<br />
+
+					<span className='text-highlight'>
+						I write articles{' '}
+						<strong className='bg-black/60 text-highlight px-1 cursor-pointer'>
+							here
+						</strong>{' '}
+						about code, productivity, and whatever I'm invested into at the
+						moment. Occasionally, I do live coding streams on twitch(
+						occasionally, really).
+					</span>
+					<br />
+					<br />
+					<br />
+
+					<span className='mt-2 text-highlight'>
+						Outside of programming, I enjoy working on business ideas, studying
+						financial markets, reading books, doing math, or watching space
+						documentaries. In case you are interested, here are things I use on
+						my work setup.
+					</span>
+					<br />
+					<br />
+
+					<span className='text-highlight'>Find me on</span>
+					<br />
+					<span className='text-highlight flex gap-1'>
+						<div className='bg-white/60 text-base-darker px-1 cursor-pointer'>
+							GitHub
+						</div>
+						<div className='bg-white/60 text-base-darker px-1 cursor-pointer'>
+							LinkedIn
+						</div>
+						<div className='bg-white/60 text-base-darker px-1 cursor-pointer'>
+							Discord Server
+						</div>
+					</span>
+					<br />
+
+					<span className='text-highlight flex flex-col items-start'>
+						Or mail me at
+						<div className='bg-white/60 text-base-darker px-1 cursor-pointer'>
+							yvy.05@proton.me
+						</div>
+					</span>
 				</div>
 			</div>
 		</div>
