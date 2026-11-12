@@ -6,8 +6,11 @@ export const Projects = () => {
 		<div className='w-full h-[110%]'>
 			<header className='grid h-15 border-b border-white/5 grid-cols-[7%_1fr_7%] w-full'>
 				<div className='border-r border-white/5'></div>
-				<div className='flex justify-center items-center text-inter font-light tracking-[0.15em]'>
-					SOME OF MY WORKS
+				<div className='flex relative justify-center items-center text-inter font-light tracking-[0.15em]'>
+					<div className='uppercase flex items-center cursor-pointer tracking-[0.25em] font-medium text-xl font-playfair absolute h-full left-0'>
+						Felipe Magalhães
+					</div>
+					<span>SOME OF MY WORKS</span>
 				</div>
 				<div className='border-l border-white/5'></div>
 			</header>
@@ -76,7 +79,7 @@ export const Projects = () => {
 								</h3>
 
 								<span className='text-center text-[12px] uppercase tracking-[0.15em]'>
-									A reading media platform. Track your favorite reads
+									A reading media platform. Tracking your favorite reads
 								</span>
 							</div>
 
