@@ -60,12 +60,15 @@ export const Footer = () => {
 				<div className='text-base border-r border-base-darker flex text-[10px] justify-left tracking-[0.15em]'>
 					{/* Linkedin */}
 					<div className='flex items-center justify-center px-1.5 border-r border-white/5 flex-col gap-2'>
-						<button
+						<a
+							href='https://www.linkedin.com/in/felipe-magalh%C3%A3es-b2b36a2b6/'
+							target='_blank'
+							rel='noopener noreferrer'
 							title='My LinkedIn profile'
 							className='hover:text-highlight-light [writing-mode:vertical-rl] [text-orientation:upright] cursor-pointer transition duration-100'
 						>
 							LINKEDIN
-						</button>
+						</a>
 						<div className='flex flex-col gap-4'>
 							<Icon icon='akar-icons:linkedin-box-fill' className='size-4' />
 						</div>
@@ -89,12 +92,15 @@ export const Footer = () => {
 					</div>
 
 					<div className='flex items-center justify-center px-1.5 border-r border-white/5 flex-col gap-2'>
-						<button
+						<a
+							href='https://github.com/magalhaesfelipe'
+							target='_blank'
+							rel='noopener noreferrer'
 							title='My GitHub profile'
 							className='hover:text-highlight-light [writing-mode:vertical-rl] [text-orientation:upright]  cursor-pointer transition duration-100'
 						>
 							GITHUB
-						</button>
+						</a>
 						<div className='flex flex-col gap-4'>
 							<Icon icon='akar-icons:github-fill' className='size-4' />
 						</div>
