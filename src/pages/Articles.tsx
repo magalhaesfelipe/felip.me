@@ -14,15 +14,13 @@ export const Articles = () => {
 					onClick={() => {
 						navigate('/');
 					}}
-					className='font-normal tracking-wide hover:text-highlight hover:border-white/20 transition duration-300 cursor-pointer gap-0 flex justify-center items-start pt-7 h-[20%] w-full border-r-transparent border-b border-r border-white/5'
+					className='font-normal tracking-wide hover:text-highlight hover:border-white/20 transition duration-300 cursor-pointer gap-0 flex justify-center items-center h-15 w-full border-r-transparent border-b border-r border-white/5'
 				>
-					<div className='flex items-center justify-center'>
-						<Icon
-							icon='material-symbols:keyboard-arrow-right'
-							className='size-5'
-						/>
-						cd ..
-					</div>
+					<Icon
+						icon='material-symbols:keyboard-arrow-right'
+						className='size-5'
+					/>
+					<span>cd ..</span>
 				</button>
 			</div>
 			<div className='h-full flex relative justify-baseline py-2 '>
@@ -42,7 +40,7 @@ export const Articles = () => {
 					<ul className='w-full flex *:tracking-widest text-highlight flex-col items-center gap-3'>
 						{/* ARTICLE 1 */}
 						<button
-							onClick={() => navigate('the-deceiving-layout')}
+							onClick={() => navigate('the-deceptive-layout')}
 							className='relative group py-4 px-2 w-[95%] flex text-[13px] justify-center items-center border border-white/5 cursor-pointer hover:text-highlight hover:border-white/15 transition duration-400'
 						>
 							THE DECEIVING LAYOUT

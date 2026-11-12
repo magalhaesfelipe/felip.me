@@ -3,7 +3,7 @@ import { Home } from './pages/Home';
 import { Contact } from './pages/Contact';
 import { RootLayout } from './pages/RootLayout';
 import { Articles } from './pages/Articles';
-import { TheDeceivingLayout } from './pages/articles/TheDeceivingLayout';
+import { TheDeceivingLayout } from './pages/articles/TheDeceptiveLayout';
 import { Projects } from './pages/Projects';
 
 export const App = () => {
@@ -16,7 +16,7 @@ export const App = () => {
 					<Route path='/articles' element={<Articles />} />
 					<Route path='/projects' element={<Projects />} />
 					<Route
-						path='/articles/the-deceiving-layout'
+						path='/articles/the-deceptive-layout'
 						element={<TheDeceivingLayout />}
 					/>
 				</Route>
