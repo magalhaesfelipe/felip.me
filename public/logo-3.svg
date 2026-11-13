@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="20" height="20" viewBox="1.85 1.85 16.3 16.3" xml:space="preserve">
+<desc>Created with Fabric.js 6.5.3</desc>
+<defs>
+</defs>
+<g transform="matrix(1 0 0 1 10 10)"  >
+<rect x="1.8" y="1.8" width="16.3" height="16.3" transform=" translate(-9.95, -9.95)" style="fill: #ececec; stroke: none;" />
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: #050505; fill-rule: evenodd; opacity: 1;"  transform=" translate(-9.95, -9.95)" d="M 1.8 1.8 L 1.8 18.1 L 18.1 18.1 L 18.1 1.8 L 1.8 1.8 Z M 13.6 8.3 C 13.2 6.7 12.4 6 11.2 6 L 9.7 6 C 9.6 6.8 9.6 8.2 9.6 10.1 L 10.7 10.1 C 11.3 10.1 11.7 9.6 11.9 8.7 L 12.3 8.7 L 12.3 12.2 L 11.9 12.2 C 11.7 11.3 11.3 10.8 10.7 10.8 L 9.6 10.8 C 9.6 11.9 9.6 12.9 9.7 13.7 C 9.7 14.2 9.8 14.5 10 14.7 C 10.1 14.9 10.4 15 10.7 15.1 L 11.3 15.2 L 11.3 15.6 L 5.9 15.6 L 5.9 15 L 6.4 15 C 6.7 14.9 6.9 14.8 7.1 14.6 C 7.3 14.4 7.3 14.1 7.4 13.6 C 7.6 11.6 7.6 9.5 7.4 7.2 C 7.4 6.7 7.3 6.4 7.1 6.2 C 6.9 6 6.7 5.8 6.4 5.7 L 5.9 5.7 L 5.9 5.2 L 14 5.2 L 14.1 8.1 L 13.6 8.3 Z" stroke-linecap="round" />
+</g>
+</svg>
