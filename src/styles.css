@@ -14,6 +14,7 @@
 	/* Highlight */
 	--color-highlight: #ececec;
 	--color-highlight-light: #ffffff;
+	--color-highlight-dark: #d8d8d8;
 
 	/* Font */
 	--font-playfair: 'Playfair Display', cursive;
