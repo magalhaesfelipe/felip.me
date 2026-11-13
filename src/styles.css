@@ -4,6 +4,7 @@
 @theme {
 	/* Text */
 	--color-base: #6e6e6e;
+	--color-base-light: #808080;
 	--color-base-dark: #545454;
 	--color-base-darker: #171717;
 
