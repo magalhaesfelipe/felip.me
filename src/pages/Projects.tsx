@@ -10,11 +10,19 @@ export const Projects = () => {
 			<header className='grid h-15 border-b border-white/5 grid-cols-[7%_1fr_7%] w-full'>
 				{/* Go back button */}
 				<div className='aspect-square h-15 flex items-center justify-center border-r border-white/5 w-full'>
-					<img src='/logo-3.svg' alt='' className='size-14.5 bg-rose-400' />
+					<img
+						onClick={() => navigate('/')}
+						src='/logo-3.svg'
+						alt=''
+						className='size-14.5 cursor-pointer'
+					/>
 				</div>
 
 				<div className='flex relative justify-center items-center text-inter font-light tracking-[0.15em]'>
-					<div className='uppercase flex items-center cursor-pointer tracking-[0.25em] font-medium text-xl font-playfair absolute h-full left-0'>
+					<div
+						onClick={() => navigate('/')}
+						className='uppercase hover:text-base-light flex items-center cursor-pointer tracking-[0.25em] font-medium text-xl font-playfair absolute h-full left-0'
+					>
 						Felipe Magalhães
 					</div>
 					<span>SOME OF MY WORKS</span>
