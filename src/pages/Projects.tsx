@@ -6,7 +6,7 @@ export const Projects = () => {
 	const navigate = useNavigate();
 
 	return (
-		<div className='w-full h-[110%]'>
+		<div className='w-full bg-red-blue/20'>
 			<header className='grid h-15 border-b border-white/5 grid-cols-[7%_1fr_7%] w-full'>
 				{/* Go back button */}
 				<button
@@ -30,8 +30,9 @@ export const Projects = () => {
 				</div>
 				<div className='border-l border-white/5'></div>
 			</header>
+
 			<main
-				className='h-full relative  isolate z-10 w-full grid grid-cols-[7%_1fr_7%]
+				className='relative  isolate z-10 w-full grid grid-cols-[7%_1fr_7%]
   after:absolute after:inset-x-0 after:bottom-0 after:z-20 after:border-b after:border-base-darker after:pointer-events-none'
 			>
 				<div className='border-r  border-white/5'></div>
@@ -42,10 +43,10 @@ export const Projects = () => {
 							return (
 								<div
 									key={i}
-									className='p-5 grid rounded-[20px] [corner-shape:bevel] grid-rows-[1fr_1.5fr_1fr] gap-1 items-center justify-center group hover:scale-105 hover:-translate-y-2 transition duration-400'
+									className='p-5 grid rounded-[20px] [corner-shape:bevel] grid-rows-[1fr_1.5fr_1fr] gap-1 items-center justify-center group/outer hover:scale-105 hover:-translate-y-2 transition duration-400'
 								>
 									<div className='flex flex-col px-3 gap-2 items-center'>
-										<h3 className='uppercase font-playfair text-highlight-dark  group-hover:text-highlight-light transition duration-400 font-semibold text-[17px] tracking-[0.2em]'>
+										<h3 className='uppercase font-playfair text-highlight-dark  group-hover/outer:text-highlight-light transition duration-400 font-semibold text-[17px] tracking-[0.2em]'>
 											{project?.title || '-'}
 										</h3>
 
@@ -57,34 +58,35 @@ export const Projects = () => {
 									{/* Icon */}
 									<div className='flex justify-center items-center py-3'>
 										{project?.isCustomIcon ? (
-											<project.icon className='size-32 group-hover:text-highlight transition duration-400' />
+											<project.icon className='size-32 group-hover/outer:text-highlight transition duration-400' />
 										) : (
 											<Icon
 												icon={project.icon as string}
-												className='size-30 group-hover:text-highlight transition-colors duration-400'
+												className='size-30 group-hover/outer:text-highlight transition-colors duration-400'
 											/>
 										)}
 									</div>
 
 									{/* Buttons */}
-									<div className='flex flex-col justify-center w-full items-center gap-3'>
+									<div className='flex flex-col transition duration-400 rounded-[10px] [corner-shape:bevel]'>
 										{project?.websiteLink && (
 											<a
-												href={project?.websiteLink}
+												href={project?.websiteLink?.url}
 												target='_blank'
 												rel='noopener noreferrer'
-												className='cursor-pointer w-[90%] tracking-[0.04em] text-sm hover:border-white/20 hover:text-highlight-light transition duration-400 py-2 flex justify-center border border-white/5'
+												className='cursor-pointer tracking-[0.04em] text-sm hover:text-highlight-light transition duration-400 py-2 flex justify-center'
 											>
-												{project?.websiteLink || '-'}
+												{project?.websiteLink?.label || '-'}
 											</a>
 										)}
+
 										{project?.repoLinks?.map((rl, i) => (
 											<a
 												key={i}
 												href={rl?.url}
 												target='_blank'
 												rel='noopener noreferrer'
-												className='cursor-pointer w-[90%] tracking-[0.04em] text-sm hover:border-white/20 hover:text-highlight-light transition duration-400 py-2 flex justify-center border border-white/5'
+												className='cursor-pointer tracking-[0.04em] text-sm hover:text-highlight-light transition duration-400 py-2 flex justify-center'
 											>
 												{rl?.label || '-'}
 											</a>
