@@ -44,9 +44,9 @@ export const Articles = () => {
 							className='relative group py-4 px-2 w-[95%] flex text-[13px] justify-center items-center border border-white/5 cursor-pointer hover:text-highlight hover:border-white/15 transition duration-400'
 						>
 							THE DECEIVING LAYOUT
-							<div className='absolute flex border-white/20 border  items-center -right-full p-2 invisible opacity-0 w-0 h-0 -translate-y-1.5 group-hover:visible group-hover:opacity-100 group-hover:h-30 group-hover:w-85 group-hover:translate-y-1 transition duration-500'>
-								<div className='absolute flex items-center h-full left-0 w-1'>
-									<div className='w-7 h-2 absolute border-y border-white/20 -left-7 bg-bg'></div>
+							<div className='absolute flex border-white/20 border items-center -right-94.75 p-2 invisible opacity-0 w-0 h-0 -translate-y-1.5 group-hover:visible group-hover:opacity-100 group-hover:h-30 group-hover:w-85 group-hover:translate-y-1 transition duration-500'>
+								<div className='absolute flex items-center h-full left-1 w-1 '>
+									<div className='w-10 h-2 absolute border-y border-white/20 -left-11 bg-bg'></div>
 								</div>
 								<span>
 									How a seemingly simple layout got me to use recursion to get
@@ -63,15 +63,15 @@ export const Articles = () => {
 							className='relative group py-4 px-2 w-[95%] flex text-[13px] justify-center items-center border border-white/5 cursor-pointer hover:text-highlight hover:border-white/15 transition duration-400'
 						>
 							THE GRID PROBLEM
-							<div className='absolute flex border-white/20 border items-center -left-full p-2 invisible opacity-0 w-0 h-0 -translate-y-1.5 group-hover:visible group-hover:opacity-100 group-hover:h-30 group-hover:w-85 group-hover:translate-y-1 transition duration-500'>
+							<div className='absolute flex border-white/20 border items-center -left-94.75 p-2 invisible opacity-0 w-0 h-0 -translate-y-1.5 group-hover:visible group-hover:opacity-100 group-hover:h-30 group-hover:w-85 group-hover:translate-y-1 transition duration-500'>
 								<span>
 									How a seemingly simple layout got me to use recursion to get
 									it done. My platform Elit Wallpapers needed to render image
 									categories and sub-categories, but that, proved to be a
 									challenge.
 								</span>
-								<div className='absolute flex items-center h-full right-0 w-1'>
-									<div className='w-7 h-2 absolute border-y border-white/20 -right-7 bg-bg'></div>
+								<div className='absolute flex items-center h-full right-1 w-1'>
+									<div className='w-10 h-2 absolute border-y border-white/20 -right-11 bg-bg'></div>
 								</div>
 							</div>
 						</button>
