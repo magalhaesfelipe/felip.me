@@ -135,12 +135,8 @@ export const Column3 = () => {
 								alt=''
 								className='h-full w-full items-center justify-center relative object-cover border-x border-black/15 px-2.75 py-1.5 bg-highlight transition-transform duration-700 ease-out group-hover:scale-106'
 							/>
-							<div className='absolute inset-0 flex items-center justify-center z-20 p-2 bg-black/70 h-[50%] left-[20%] top-[27%] object-cover rounded-sm w-[60%] size-5'>
-								<img
-									src={logoTonegrid}
-									alt=''
-									className='text-highlight size-100 max-h-full max-w-full object-contain p-2'
-								/>
+							<div className='absolute p-2 bg-black/70 h-[50%] left-[20%] justify-center flex top-[27%] items-center object-cover rounded-sm w-[60%] size-5'>
+								<Icon icon='carbon:book' className='text-highlight size-20' />
 							</div>
 						</div>
 						<div className='flex flex-col py-4 text-[11px] font-normal tracking-[0.15em]'>
