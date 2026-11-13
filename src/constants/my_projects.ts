@@ -6,7 +6,7 @@ export const myProjects = [
 		description: 'Pretty heatmap tracker for desktop and the web',
 		icon: LogoTonegrid,
 		isCustomIcon: true,
-		websiteLink: 'https://tonegrids.com',
+		websiteLink: { label: 'togegrid.com', url: 'https://tonegrids.com' },
 		repoLinks: [
 			{
 				label: 'GitHub',
@@ -19,7 +19,10 @@ export const myProjects = [
 		description: 'A high quality, meticulously curated, wallpapers platform',
 		icon: 'boxicons:image-alt',
 		isCustomIcon: false,
-		websiteLink: 'https://elitwallpapers.com',
+		websiteLink: {
+			label: 'elitwallpapers.com',
+			url: 'https://elitwallpapers.com',
+		},
 		repoLinks: [
 			{
 				label: 'GitHub',
@@ -32,7 +35,10 @@ export const myProjects = [
 		description: 'A reading media platform. Tracking your favorite reads',
 		icon: 'carbon:book',
 		isCustomIcon: false,
-		websiteLink: 'https://mangazineprotocol.netlify.app/',
+		websiteLink: {
+			label: 'mangazineprotocol.netlify.app',
+			url: 'https://mangazineprotocol.netlify.app/',
+		},
 		repoLinks: [
 			{
 				label: 'GitHub',
@@ -46,7 +52,7 @@ export const myProjects = [
 			'Dark Neovim colorscheme forged in the reflection of Bonsai trees',
 		icon: 'game-icons:bonsai-tree',
 		isCustomIcon: false,
-		websiteLink: '',
+		websiteLink: null,
 		repoLinks: [
 			{
 				label: 'Neovim',
