@@ -5,20 +5,19 @@ export const Header = () => {
 	const location = useLocation();
 
 	return (
-		<section className='h-24.75 border-b border-base-darker w-full grid grid-cols-[4%_1fr_1fr_1fr_4%]'>
-			<div className='border-r border-base-darker'></div>
+		<section className='h-24.75 border-b **:font-medium border-base-darker **:border-base-darker  w-full grid grid-cols-[4%_1fr_1fr_1fr_4%]'>
+			<div className='border-r'></div>
 
 			<button
 				onClick={() => {
 					if (location.pathname !== '/') navigate('/');
 				}}
-				className='text-highlight text-2xl cursor-pointer border-r border-base-darker  flex items-center font-playfair font-medium tracking-[0.15em]'
+				className='text-highlight text-2xl cursor-pointer border-r flex items-center font-playfair tracking-[0.15em]'
 			>
 				FELIPE MAGALHÃES
 			</button>
 
-			<ul className='flex relative items-center border-r border-base-darker font-medium tracking-[0.25em] text-[11px] justify-center gap-13'>
-				<div></div>
+			<ul className='flex relative items-center border-r *:hover:text-highlight *:transition *:duration-150 *:cursor-pointer tracking-[0.25em] text-[11px] justify-center gap-13'>
 				<li
 					onClick={() => {
 						if (location.pathname === '/') return;
@@ -27,23 +26,21 @@ export const Header = () => {
 					style={{
 						color: location.pathname === '/' ? 'var(--color-highlight)' : '',
 					}}
-					className='hover:text-highlight transition cursor-pointer duration-150'
 				>
 					HOME{' '}
 				</li>
 
 				<li
 					onClick={() => {
-						if (location.pathname === '/projects') return;
-						navigate('/projects');
+						if (location.pathname === '/works') return;
+						navigate('/works');
 					}}
 					style={{
 						color:
-							location.pathname === '/projects' ? 'var(--color-highlight)' : '',
+							location.pathname === '/works' ? 'var(--color-highlight)' : '',
 					}}
-					className='hover:text-highlight transition cursor-pointer duration-150'
 				>
-					PROJECTS{' '}
+					WORKS{' '}
 				</li>
 
 				<li
@@ -55,7 +52,6 @@ export const Header = () => {
 						color:
 							location.pathname === '/articles' ? 'var(--color-highlight)' : '',
 					}}
-					className='hover:text-highlight transition cursor-pointer duration-150'
 				>
 					ARTICLES{' '}
 				</li>
