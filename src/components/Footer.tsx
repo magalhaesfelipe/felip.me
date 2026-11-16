@@ -106,7 +106,16 @@ export const Footer = () => {
 						</div>
 					</div>
 				</div>
-				<div className='flex border-r border-base-darker relative justify-center gap-13'></div>
+				<div className='flex items-center border-r border-base-darker relative justify-center gap-13'>
+					<div className='aspect-square h-15 flex items-center justify-center border-r border-white/5 w-full'>
+						<img
+							onClick={() => navigate('/')}
+							src='/logo-3.svg'
+							alt=''
+							className='size-14.5 cursor-pointer'
+						/>
+					</div>
+				</div>
 				<div className='flex items-center justify-center text-[9px] tracking-[0.15em]'>
 					© 2026 FELIPE MAGALHÃES. ALL RIGHTS RESERVED.
 				</div>
