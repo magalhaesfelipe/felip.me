@@ -39,8 +39,8 @@ export const Contact = () => {
 			>
 				<div className='flex flex-col justify-center gap-15'>
 					<h1
-						className='font-playfair text-highlight pb-3 text-center text-2xl
-							font-medium tracking-[0.15em]'
+						className='font-playfair pb-3 text-center text-2xl font-medium
+							tracking-[0.15em] text-white/60'
 					>
 						FIND ME ON
 					</h1>
