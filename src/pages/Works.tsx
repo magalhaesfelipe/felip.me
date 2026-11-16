@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import { myProjects } from '../constants/my_projects.ts';
 
-export const Projects = () => {
+export const Works = () => {
 	const navigate = useNavigate();
 
 	return (
