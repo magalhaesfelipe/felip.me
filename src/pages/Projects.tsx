@@ -7,47 +7,11 @@ export const Projects = () => {
 
 	return (
 		<div className='w-full'>
-			<header className='grid h-15 border-b border-white/5 grid-cols-[7%_1fr_7%] w-full'>
-				{/* Go back button */}
-				<div className='aspect-square h-15 flex items-center justify-center border-r border-white/5 w-full'>
-					<img
-						onClick={() => navigate('/')}
-						src='/logo-3.svg'
-						alt=''
-						className='size-14.5 cursor-pointer'
-					/>
-				</div>
-
-				<div className='flex relative justify-center items-center text-inter font-light tracking-[0.15em]'>
-					<div
-						onClick={() => navigate('/')}
-						className='uppercase hover:text-base-light flex items-center cursor-pointer tracking-[0.25em] font-medium text-xl font-playfair absolute h-full left-0'
-					>
-						Felipe Magalhães
-					</div>
-					<span>SOME OF MY WORKS</span>
-				</div>
-				<div className='border-l border-white/5'></div>
-			</header>
-
 			<main
 				className='relative  isolate z-10 w-full grid grid-cols-[7%_1fr_7%]
   after:absolute after:inset-x-0 after:bottom-0 after:z-20 after:border-b after:border-base-darker after:pointer-events-none'
 			>
-				<div className='border-r border-white/5'>
-					<button
-						onClick={() => {
-							navigate('/');
-						}}
-						className='font-normal text-sm tracking-wide hover:text-highlight hover:border-white/20 transition duration-300 cursor-pointer gap-0 flex justify-center pr-2 items-center h-15 w-full border-r-transparent border-t border-b border-r border-white/5'
-					>
-						<Icon
-							icon='material-symbols:keyboard-arrow-right'
-							className='size-4'
-						/>
-						<span>cd ..</span>
-					</button>
-				</div>
+				<div></div>
 
 				<div className='pt-[5%] p-[10%] flex justify-center'>
 					<div className='grid w-full grid-cols-3 gap-5 *:border *:border-white/5'>
