@@ -1,7 +1,10 @@
+import { useNavigate } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import { myProjects } from '../constants/my_projects.ts';
 
 export const Projects = () => {
+	const navigate = useNavigate();
+
 	return (
 		<div className='w-full'>
 			<main
@@ -10,7 +13,7 @@ export const Projects = () => {
 			>
 				<div></div>
 
-				<div className='pt-[5%] p-[10%] flex justify-center'>
+				<div className='pt-[5%] p-[10%] flex flex-col items-center gap-15'>
 					<div className='grid w-full grid-cols-3 gap-5 *:border *:border-white/5'>
 						{/* Cards */}
 						{myProjects.map((project, i) => {
@@ -70,7 +73,23 @@ export const Projects = () => {
 							);
 						})}
 					</div>
+
+					<div className='flex justify-center w-full'>
+						<button
+							onClick={() => {
+								navigate('/');
+							}}
+							className='group hover:border-highlight font-normal text-sm tracking-wide gap-0.5 cursor-pointer flex justify-center items-center border-b pr-1.5 pb-1 ml-1.5 transition duration-150'
+						>
+							<Icon
+								icon='material-symbols:keyboard-arrow-right'
+								className='size-4'
+							/>
+							<span className='group-hover:text-highlight'>cd ..</span>
+						</button>
+					</div>
 				</div>
+
 				<div className='border-l border-white/5'></div>
 			</main>
 		</div>
