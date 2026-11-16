@@ -10,27 +10,22 @@ export const Contact = () => {
 
 	return (
 		<main
-			className='relative isolate z-10 w-full h-full min-h-0 overflow-hidden grid grid-cols-[7%_1fr_1fr_1fr_7%] grid-rows-[minmax(0,1fr)]
-  after:absolute after:inset-x-0 after:bottom-0 after:z-20 after:border-b after:border-base-darker after:pointer-events-none'
+			className='after:border-base-darker relative isolate z-10 grid h-full
+				min-h-0 w-full grid-cols-[7%_1fr_1fr_1fr_7%] grid-rows-[minmax(0,1fr)]
+				overflow-hidden after:pointer-events-none after:absolute after:inset-x-0
+				after:bottom-0 after:z-20 after:border-b'
 		>
-			<div className='min-h-0 border-r border-white/5'>
-				<button
-					title='Go back'
-					onClick={() => {
-						navigate('/');
-					}}
-					className='font-normal tracking-wide hover:text-highlight hover:border-white/20 transition duration-300 cursor-pointer flex justify-center items-center h-15 w-full border-r-transparent gap-0.5 border-b border-r border-white/5'
-				>
-					<Icon icon='ic:baseline-keyboard-arrow-right' className='size-5' />
-					<span>
-						cd <strong className='tracking-[0.15em]'>..</strong>
-					</span>
-				</button>
-			</div>
+			<div className='border-r border-white/5'></div>
 
 			{/* Left ruler column */}
-			<div className='relative h-full min-h-0 overflow-hidden border-r border-white/5'>
-				<div className='absolute inset-y-2 right-0 w-5 overflow-hidden flex flex-col gap-30 *:shrink-0 *:border-b *:border-white/5'>
+			<div
+				className='relative h-full min-h-0 overflow-hidden border-r
+					border-white/5'
+			>
+				<div
+					className='absolute inset-y-2 right-0 flex w-5 flex-col gap-30
+						overflow-hidden *:shrink-0 *:border-b *:border-white/5'
+				>
 					{Array.from({ length: 40 }, (_, i) => (
 						<div key={i} className='w-full' />
 					))}
@@ -38,36 +33,75 @@ export const Contact = () => {
 			</div>
 
 			{/* Middle column */}
-			<div className='min-h-0 py-15 grid grid-rows-[1fr_1.5fr] gap-2 border-r border-white/5'>
+			<div
+				className='grid min-h-0 grid-rows-[1fr_1.5fr] gap-2 border-r
+					border-white/5 py-15'
+			>
 				<div className='flex flex-col justify-center gap-15'>
-					<h1 className='text-2xl font-playfair text-highlight font-medium tracking-[0.15em] text-center pb-3'>
+					<h1
+						className='font-playfair text-highlight pb-3 text-center text-2xl
+							font-medium tracking-[0.15em]'
+					>
 						FIND ME ON
 					</h1>
 
-					<ul className='w-full flex *:tracking-widest text-highlight flex-col items-center gap-3'>
-						<li className='py-4 px-2 w-[95%] flex text-[13px] justify-center items-center border border-white/5 cursor-pointer hover:text-highlight hover:border-white/15 transition duration-400'>
+					<ul
+						className='text-highlight flex w-full flex-col items-center gap-3
+							text-[13px] *:flex *:w-[95%] *:items-center *:justify-center
+							*:border *:border-white/5 *:px-2 *:py-4 *:tracking-widest'
+					>
+						<li
+							className='hover:text-highlight cursor-pointer transition
+								duration-400 hover:border-white/15'
+						>
 							<a href={githubLink} rel='noopener noreferrer' target='_blank'>
 								GITHUB
 							</a>
 						</li>
-						<li className='py-4 px-2 w-[95%] flex justify-center text-[13px] items-center border border-white/5 cursor-pointer hover:text-highlight hover:border-white/15 transition duration-400'>
+						<li
+							className='hover:text-highlight cursor-pointer transition
+								duration-400 hover:border-white/15'
+						>
 							<a href={linkedinLink} rel='noopener noreferrer' target='_blank'>
 								LINKEDIN
 							</a>
 						</li>
-						<li className='py-4 px-2 w-[95%] flex justify-center text-[13px] items-center border border-white/5 cursor-pointer hover:text-highlight hover:border-white/15 transition duration-400'>
+						<li
+							className='hover:text-highlight cursor-pointer transition
+								duration-400 hover:border-white/15'
+						>
 							<a href={emailLink} rel='noopener noreferrer' target='_blank'>
 								yvy.05@proton.me
 							</a>
 						</li>
 					</ul>
+
+					<div className='flex w-full justify-center'>
+						<button
+							onClick={() => {
+								navigate('/');
+							}}
+							className='group hover:border-highlight ml-1.5 flex cursor-pointer
+								items-center justify-center gap-0.5 border-b pr-1.5 pb-1 text-sm
+								font-normal tracking-wide transition duration-150'
+						>
+							<Icon
+								icon='material-symbols:keyboard-arrow-right'
+								className='size-4'
+							/>
+							<span className='group-hover:text-highlight'>cd ..</span>
+						</button>
+					</div>
 				</div>
 				<div />
 			</div>
 
 			{/* Right ruler column */}
 			<div className='relative h-full min-h-0 overflow-hidden'>
-				<div className='absolute inset-y-2 left-0 w-5 overflow-hidden flex flex-col gap-30 *:shrink-0 *:border-b *:border-white/5'>
+				<div
+					className='absolute inset-y-2 left-0 flex w-5 flex-col gap-30
+						overflow-hidden *:shrink-0 *:border-b *:border-white/5'
+				>
 					{Array.from({ length: 40 }, (_, i) => (
 						<div key={i} className='w-full' />
 					))}
