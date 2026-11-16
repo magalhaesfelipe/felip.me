@@ -5,6 +5,7 @@ import { Works } from './pages/Works';
 import { Articles } from './pages/Articles';
 import { Contact } from './pages/Contact';
 import { TheDeceivingLayout } from './pages/articles/TheDeceptiveLayout';
+import { NotFound } from './pages/NotFound';
 
 export const App = () => {
 	return (
@@ -19,6 +20,8 @@ export const App = () => {
 						path='/articles/the-deceptive-layout'
 						element={<TheDeceivingLayout />}
 					/>
+
+					<Route path='*' element={<NotFound />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>
